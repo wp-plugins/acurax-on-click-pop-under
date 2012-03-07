@@ -19,12 +19,13 @@ It will open only once per cookie session. There is also option to configure the
 
 
 **Need More Features or Need Support on Wordpress**
-[Acurax](http://www.acurax.com/ "Acurax Web Design Development Service") Provide Wordpress Theme Design and Development Services.
+
+[Acurax](http://www.acurax.com/ "Acurax Web Design Development Service") Provide [Wordpress Theme Design](http://www.acurax.com/services/web-designing.php "Wordpress Theme Design Service") and [Development](http://www.acurax.com/services/web-development.php "Wordpress Development") Services.
 We will be releasing a Premium Version of this plugin which support more features in few weeks.
 
 
 **About**
-This Plugin is developed and maintained by [Acurax International](http://www.acurax.com/ "acurax.com"). For any support, you may contact us [here](http://www.acurax.com/contact.php "Contact Us")
+This Plugin is developed and maintained by [Acurax International](http://www.acurax.com/ "Website Designing"). For any support, you may contact us [here](http://www.acurax.com/contact.php "Web Consulting")
 
 == Installation ==
 
