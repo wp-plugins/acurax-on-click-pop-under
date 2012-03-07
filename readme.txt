@@ -37,3 +37,4 @@ Then Visit Plugin Configuration Settings Under Posts Menu on WP-Admin and config
 == Screenshots ==
 
 1. Plugin Settings Page
+2. Magnified Screenshot of Plugin Settings
