@@ -25,6 +25,7 @@ We will be releasing a Premium Version of this plugin which support more feature
 
 
 **About**
+
 This Plugin is developed and maintained by [Acurax International](http://www.acurax.com/ "Website Designing"). For any support, you may contact us [here](http://www.acurax.com/contact.php "Web Consulting")
 
 == Installation ==
