@@ -5,7 +5,7 @@ Plugin URI: http://www.acurax.com/Products/acurax-click-pop-plugin-wordpress/
 Description: An Easy to use plugin to enable pop under page on visitors browser on visitor click. Admin can configure the url to open as popunder on visitor 	
 click. Plugin will set cookie on visitors browser on popunder appear and so it will show only once. You can also configure the cookie timeout in plugin settings.
 Author: Acurax 
-Version: 1.0 
+Version: 1.0.1 
 Author URI: http://www.acurax.com 
 License: GPLv2 or later
 */
