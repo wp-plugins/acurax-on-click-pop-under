@@ -1,6 +1,6 @@
 ﻿=== Acurax On Click Pop Under ===
 Contributors: Acurax 
-Donate link:http://www.acurax.com/contact.php
+Donate link:http://www.acurax.com
 
 Tags: onclick popunder,pop,popup,popup alternative,pop under,site popup,easy popunder,ad manager,popunder manager,pop manager,popup manager,
 Requires at least: 2.8
