@@ -2,7 +2,7 @@
 Contributors: Acurax 
 Donate link:http://www.acurax.com/contact.php
 
-Tags: onclick popunder,pop,popup,popup alternative,pop under,
+Tags: onclick popunder,pop,popup,popup alternative,pop under,site popup,easy popunder,ad manager,popunder manager,pop manager,popup manager,
 Requires at least: 2.8
 Tested up to: 3.3.1
 Stable tag: 1.0.1
