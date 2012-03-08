@@ -22,7 +22,7 @@
 <form name="acurax_popunder_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 	<input type="hidden" name="acurax_popunder_hidden" value="Y">
 	<?php    echo "<h4>" . __( 'Popunder Settings', 'acx_popunder_config' ) . "</h4>"; ?>
-	<p><?php _e("Popunder URL: " ); ?><input type="text" name="acurax_popunder_url" value="<?php echo $acurax_popunder_url; ?>" size="20"><?php _e(" ex: http://www.acurax.com" ); ?></p>
+	<p><?php _e("Popunder URL: " ); ?><input type="text" name="acurax_popunder_url" value="<?php echo $acurax_popunder_url; ?>" size="20"><?php _e(" ex: <a href='http://www.acurax.com' target='_blank'>http://www.acurax.com</a>" ); ?></p>
 	<hr />
 	
 	<p><?php _e("Popunder Cookie Expire Timeout: " ); ?><input type="text" name="acurax_popunder_timeout" value="<?php echo $acurax_time_out; ?>" size="20"><?php _e("<b>Minutes</b>. Needs to Define in Minutes, For Eg: '60' for 1 Hour" ); ?></p>
