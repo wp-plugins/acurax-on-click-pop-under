@@ -30,7 +30,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 //*************** Include JS in Header ********
 function enqueue_acx_popunder_script()
 {
-	wp_enqueue_script ( 'acx_pop-under_script', plugins_url('js.php', __FILE__) );
+?>
+<br/>
+<script type="text/javascript" src="<?php echo plugins_url('js.php', __FILE__);?>"></script>
+<?php
 }
 add_action( 'get_footer', 'enqueue_acx_popunder_script' );
 //*************** Include JS in Header Ends Here ********
