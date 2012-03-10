@@ -5,7 +5,7 @@ Donate link:http://www.acurax.com
 Tags: onclick popunder,pop,popup,popup alternative,pop under,site popup,easy popunder,ad manager,popunder manager,pop manager,popup manager,
 Requires at least: 2.8
 Tested up to: 3.3.1
-Stable tag: 1.0.2
+Stable tag: trunk
 
 An easy to use wordpress plugin,where admin can configure a url to open as popunder in visitor browser upon visitor click, with Cookie Support.
 
