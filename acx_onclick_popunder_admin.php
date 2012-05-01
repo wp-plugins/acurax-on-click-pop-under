@@ -15,10 +15,8 @@
 		$acurax_time_out = "60";
 	}
 ?>
-
 <div class="wrap">
 <?php    echo "<h2>" . __( 'Acurax Popunder Options', 'acx_popunder_config' ) . "</h2>"; ?>
-
 <form name="acurax_popunder_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 	<input type="hidden" name="acurax_popunder_hidden" value="Y">
 	<?php    echo "<h4>" . __( 'Popunder Settings', 'acx_popunder_config' ) . "</h4>"; ?>
