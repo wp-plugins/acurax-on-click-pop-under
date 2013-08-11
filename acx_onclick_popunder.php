@@ -43,7 +43,7 @@ function acx_onclick_popunder_admin() {
 }
 function acx_onclick_popunder_admin_actions()
 {
-	add_menu_page(  'PopUnder', 'PopUnder', 8, 'Acurax-onclick_popunder-Settings','acx_onclick_popunder_admin',plugin_dir_url( __FILE__ ).'/images/admin.png', 12 ); // 8 for admin
+add_menu_page(  'PopUnder', 'PopUnder', 8, 'Acurax-onclick_popunder-Settings','acx_onclick_popunder_admin',plugin_dir_url( __FILE__ ).'/images/admin.png' ); // 8 for admin
 }
 if ( is_admin() )
 {
