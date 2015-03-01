@@ -4,24 +4,27 @@ Donate link:http://www.acurax.com
 
 Tags: onclick popunder,pop,popup,popup alternative,pop under,site popup,easy popunder,ad manager,popunder manager,pop manager,popup manager,
 Requires at least: 2.8
-Tested up to: 4.0
+Tested up to: 4.1.1
 Stable tag: trunk
 
-An easy to use wordpress plugin,where admin can configure a url to open as popunder in visitor browser upon visitor click, with Cookie Support.
+An easy to use wordpress plugin,where admin can configure a urls to open as popunder in visitor browser upon visitor click, with Cookie Support.
 
 == Description ==
 
-Acurax on click pop under plugin allows administrator to configure a website url in the plugin settings..which will open as **pop under** on visitors browser.
-When Pop Under is opening on visitor click, Plugin will save a cookie in visitors browser to determine weather popunder is opened or not.
+Acurax on click pop under plugin allows administrator to configure a website urls in the plugin settings..which will open as **pop under** on visitors browser.
+
+A Quicklook
+
+	★ Now you can configure multiple URLS
+	
+	★ Can set pop under repeat repeat interval
+
+	
+Pop Under will open when visitor clicks on the website. When popup is triggered, Plugin will save a cookie in visitors browser to remember that popup is triggered, and so it will not open again until it reaches the configured timeout interval.
+
 It will open only once per cookie session. There is also option to configure the **cookie timeout**.
 
 **For example** If we set cookie time out to <span style=\"text-decoration: underline;\">60 minutes</span>, Pop under will open on visitors click only with an interval of 60 minutes.</div>
-
-
-**Need More Features or Need Support on Wordpress**
-
-[Acurax](http://www.acurax.com/ "Acurax Web Design Development Service") Provide [Wordpress Theme Design](http://www.acurax.com/services/web-designing.php "Wordpress Theme Design Service") and [Development](http://www.acurax.com/services/web-development.php "Wordpress Development") Services.
-We will be releasing a Premium Version of this plugin which support more features in few weeks.
 
 
 **About**
@@ -38,3 +41,19 @@ Then Visit Plugin Configuration Settings Under Posts Menu on WP-Admin and config
 
 1. Plugin Settings Page
 2. Magnified Screenshot of Plugin Settings
+
+== Upgrade Notice ==
+
+= 2.0 =
+* Mar 01, 2015 | NOTE: Updating Plugin Will Not Change Your Settings/Configuration.. Update With Confidence :)
+* Optimized Codes
+* Added Multiple URL Option
+* Stable Release
+
+== Changelog ==
+
+= 2.0 =
+* Mar 01, 2015 | NOTE: Updating Plugin Will Not Change Your Settings/Configuration.. Update With Confidence :)
+* Optimized Codes
+* Added Multiple URL Option
+* Stable Release
