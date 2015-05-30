@@ -4,7 +4,7 @@ Plugin Name: Acurax On Click Pop Under
 Plugin URI: http://www.acurax.com/Products/acurax-click-pop-plugin-wordpress/
 Description: The Best Pop Under Plugin which helps you to show pop under on visitors browser on click.Plugin helps you to configure multiple URL'S. Plugin will set cookie on visitors browser when popunder appear and so it will show only once. You can also configure the cookie timeout in plugin settings.
 Author: Acurax 
-Version: 2.0
+Version: 2.1
 Author URI: http://www.acurax.com 
 License: GPLv2 or later
 */
@@ -23,24 +23,18 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */ 
 ?>
 <?php
-$acx_onclick_popunder_version = "2.0";
-$acx_onclick_popunder_version_db=get_option('acx_onclick_popunder_version');
+define("ACURAX_POPUNDER_VERSION_P","2.1");
 $url_array=get_option('acurax_popunder_array');
 $url=get_option('acurax_popunder_url');
 if($url_array != "")
-{
-	if(is_serialized( $url_array))
+{	if(is_serialized( $url_array))
 	{ 
 		$url_array = unserialize($url_array); 
 	}
-}
-else
-{
-	$url_array = array();
-}
-if(is_array($url_array))
-{
-	$url_array = array_filter($url_array);
+}else
+{	$url_array = array();
+}if(is_array($url_array))
+{	$url_array = array_filter($url_array);
 	if (empty($url_array)) 
 	{
 		if($url != "")
@@ -57,14 +51,9 @@ if(is_array($url_array))
 		}
 	}
 }
-if($acx_onclick_popunder_version_db == "" || $acx_onclick_popunder_version_db < $acx_onclick_popunder_version)
-{
-	update_option('acx_onclick_popunder_version',$acx_onclick_popunder_version);
-}
 //*************** Include JS in Header ********
 function enqueue_acx_popunder_script()
-{
-	global $options;
+{	global $options;
 	$url_array=get_option('acurax_popunder_array');
 	if(is_serialized( $url_array))
 	{ 
@@ -190,19 +179,17 @@ function enqueue_acx_popunder_script()
 	}
 	</script>
 <?php }
-}
-add_action( 'get_footer', 'enqueue_acx_popunder_script' );
+}add_action( 'get_footer', 'enqueue_acx_popunder_script' );
 //*************** Include JS in Header Ends Here ********
 //*************** Admin function ***************
+include("functions.php");
 function acx_onclick_popunder_admin() {
 	include('acx_onclick_popunder_admin.php');
-}
-function acx_onclick_popunder_admin_actions()
-{
-	add_menu_page(  'PopUnder', 'PopUnder', 'manage_options', 'Acurax-onclick_popunder-Settings','acx_onclick_popunder_admin',plugin_dir_url( __FILE__ ).'/images/admin.png' ); // 8 for admin
-}
-if ( is_admin() )
-{
-	add_action('admin_menu', 'acx_onclick_popunder_admin_actions');
-}
-?>
+}function acx_onclick_popunder_misc() 
+{	include('acx_onclick_popunder_misc.php');
+}function acx_onclick_popunder_admin_actions()
+{	add_menu_page(  'PopUnder', 'PopUnder','manage_options', 'Acurax-onclick-popunder-Settings','acx_onclick_popunder_admin',plugin_dir_url( __FILE__ ).'/images/admin.png' ); // manage_options for admin
+		add_submenu_page('Acurax-onclick-popunder-Settings', 'Acurax Onclick Popunder Misc Settings', 'Misc', 'manage_options', 'Acurax-Onclick-Popunder-Misc' ,'acx_onclick_popunder_misc');
+}if ( is_admin() )
+{	add_action('admin_menu', 'acx_onclick_popunder_admin_actions');
+}?>

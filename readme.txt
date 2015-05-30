@@ -4,38 +4,51 @@ Donate link:http://www.acurax.com
 
 Tags: onclick popunder,pop,popup,popup alternative,pop under,site popup,easy popunder,ad manager,popunder manager,pop manager,popup manager,
 Requires at least: 2.8
-Tested up to: 4.1.1
+Tested up to: 4.2
 Stable tag: trunk
 
-An easy to use wordpress plugin,where admin can configure a urls to open as popunder in visitor browser upon visitor click, with Cookie Support.
+An easy to use wordpress plugin,where admin can configure a set of urls to open as popunder in visitor browser upon visitor click, with Cookie Support.
 
 == Description ==
 
-Acurax on click pop under plugin allows administrator to configure a website urls in the plugin settings..which will open as **pop under** on visitors browser.
+Acurax on click pop under plugin allows administrator to configure a set of website url in the plugin settings..which will open as **pop under** on visitors browser.
 
-A Quicklook
+A Quick Look
 
-	★ Now you can configure multiple URLS
+	★ Configure Multiple URLS
 	
-	★ Can set pop under repeat repeat interval
-
+	★ Random URL is Picked and Open as PopUp
 	
-Pop Under will open when visitor clicks on the website. When popup is triggered, Plugin will save a cookie in visitors browser to remember that popup is triggered, and so it will not open again until it reaches the configured timeout interval.
+	★ Controlled by Cookie and So Will Open Only Once in a Session
+	
+	★ Can Configure Cookie Timeout
+	
+	★ Automatic Integration
+	
+	★ Easy to Configure
 
 It will open only once per cookie session. There is also option to configure the **cookie timeout**.
 
-**For example** If we set cookie time out to <span style=\"text-decoration: underline;\">60 minutes</span>, Pop under will open on visitors click only with an interval of 60 minutes.</div>
+When Pop Under is opening on visitor click, Plugin will save a cookie in visitors browser and so the popunder will not open again until the configured timeout.
+
+
+**For example** If we set cookie time out to 60 minutes, Pop under will open on visitors click. Once its opened, It will not open again for the next 60 minutes.
+
+
+**Need More Features**
+
+[Acurax OnClick Popunder Premium Version is Available With more Features and Performance Improvements](http://clients.acurax.com/link.php?id=17 "Acurax Onclick Popunder Premium")
 
 
 **About**
 
-This Plugin is developed and maintained by [Acurax International](http://www.acurax.com/ "Website Designing"). For any support, you may contact us [here](http://www.acurax.com/contact.php "Web Consulting")
+This Plugin is developed and maintained by [Acurax International](http://www.acurax.com/home.php "Website Designing"). For any support, you may contact us [here](http://www.acurax.com/contact.php "Web Consulting")
 
 == Installation ==
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 
-Then Visit Plugin Configuration Settings Under Posts Menu on WP-Admin and configure a popunder url and Cookie Timeout in Minutes
+Click on PopUnder Menu somewhere below settings menu at wp-admin to configure the urls and timeout.
 
 == Screenshots ==
 
@@ -44,16 +57,16 @@ Then Visit Plugin Configuration Settings Under Posts Menu on WP-Admin and config
 
 == Upgrade Notice ==
 
-= 2.0 =
-* Mar 01, 2015 | NOTE: Updating Plugin Will Not Change Your Settings/Configuration.. Update With Confidence :)
+= 2.1 =
+* May 30, 2015
 * Optimized Codes
-* Added Multiple URL Option
+* Fixed Bugs
 * Stable Release
 
 == Changelog ==
 
-= 2.0 =
-* Mar 01, 2015 | NOTE: Updating Plugin Will Not Change Your Settings/Configuration.. Update With Confidence :)
+= 2.1 =
+* May 30, 2015
 * Optimized Codes
-* Added Multiple URL Option
+* Fixed Bugs
 * Stable Release
