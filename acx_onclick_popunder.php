@@ -1,6 +1,6 @@
 <?php
 /* 
-Plugin Name: Acurax On Click Pop Under
+Plugin Name: Acurax On Click PopUnder
 Plugin URI: http://www.acurax.com/Products/acurax-click-pop-plugin-wordpress/
 Description: The Best Pop Under Plugin which helps you to show pop under on visitors browser on click.Plugin helps you to configure multiple URL'S. Plugin will set cookie on visitors browser when popunder appear and so it will show only once. You can also configure the cookie timeout in plugin settings.
 Author: Acurax 
