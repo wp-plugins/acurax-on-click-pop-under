@@ -29,7 +29,7 @@ $ad_1 = '
 					<div class="ss_column_holder"> 
 					
 						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
-						<div class="ss_feature_group" style="padding-top: 107px;"> Functionality
+						<div class="ss_feature_group" style="padding-top: 180px;"> Functionality
 						</div><!-- -->
 						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
 						<div class="ss_features"> 
@@ -39,6 +39,10 @@ $ad_1 = '
 										<li>Define Number of Impressions Needed for Each URL</li>
 										<li>Automated URL Switching Depends on Impressions </li>
 									<li>Auto Exclude Fulfilled Impression URLs</li>
+									<li>Edit a Configured PopUnder URL</li>
+									<li>Update a Configured URL Impressions Needed</li>
+									<li>Update a Configured URL Current Impressions Count</li>
+									<li>Activate/Deactivate a Configured URL</li>
 								<li class="ss_last_one">Disable PopUnder on Mobile Devices</li>
 							</ul>
 						</div><!-- ss_features -->
@@ -50,6 +54,10 @@ $ad_1 = '
 									<div class="ss_no"> </div><!-- ss_no -->
 								<div class="ss_no"> </div><!-- ss_no -->
 								<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
+								<div class="ss_no"> </div><!-- ss_no -->
 							<div class="ss_no ss_last_one"> </div><!-- ss_no -->
 						</div><!-- ss_y_n_holder -->
 						
@@ -59,6 +67,10 @@ $ad_1 = '
 									<div class="ss_yes"> </div><!-- ss_yes -->
 									<div class="ss_yes"> </div><!-- ss_yes -->
 								<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
+								<div class="ss_yes"> </div><!-- ss_yes -->
 							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
 						</div><!-- ss_y_n_holder -->						
 						
@@ -67,12 +79,13 @@ $ad_1 = '
 					<div class="ss_column_holder"> 
 					
 						<div class="tb_h1 mini"> <h3>Feature Group</h3> </div><!-- tb_h1 -->
-						<div class="ss_feature_group" style="padding-top: 51px;"> Easy to configure </div><!-- -->
+						<div class="ss_feature_group" style="padding-top: 72px;"> Easy to configure </div><!-- -->
 						<div class="tb_h1 mini"> <h3>Features</h3> </div><!-- tb_h1 -->
 						<div class="ss_features"> 
 							<ul>
 								<li>Simple Configuration</li>
 								<li>Improved User Interface</li>
+								<li>Disable URL Without Deleting</li>
 								<li class="ss_last_one">Efficient URL Validation</li>
 							</ul>
 						</div><!-- ss_features -->
@@ -81,10 +94,12 @@ $ad_1 = '
 						<div class="ss_y_n_holder"> 
 							<div class="ss_yes"> </div><!-- ss_yes -->
 							<div class="ss_no"> </div><!-- ss_no -->
+							<div class="ss_no"> </div><!-- ss_no -->
 							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->
 						</div><!-- ss_y_n_holder -->
 						
 						<div class="ss_y_n_holder"> 
+							<div class="ss_yes"> </div><!-- ss_yes -->
 							<div class="ss_yes"> </div><!-- ss_yes -->
 							<div class="ss_yes"> </div><!-- ss_yes -->
 							<div class="ss_yes ss_last_one"> </div><!-- ss_yes -->

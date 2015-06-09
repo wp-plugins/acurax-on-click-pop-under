@@ -4,7 +4,7 @@ Plugin Name: Acurax On Click PopUnder
 Plugin URI: http://www.acurax.com/Products/acurax-click-pop-plugin-wordpress/
 Description: The Best Pop Under Plugin which helps you to show pop under on visitors browser on click.Plugin helps you to configure multiple URL'S. Plugin will set cookie on visitors browser when popunder appear and so it will show only once. You can also configure the cookie timeout in plugin settings.
 Author: Acurax 
-Version: 2.1
+Version: 2.2
 Author URI: http://www.acurax.com 
 License: GPLv2 or later
 */
@@ -23,7 +23,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */ 
 ?>
 <?php
-define("ACURAX_POPUNDER_VERSION_P","2.1");
+define("ACURAX_POPUNDER_VERSION_P","2.2");
 $url_array=get_option('acurax_popunder_array');
 $url=get_option('acurax_popunder_url');
 if($url_array != "")
@@ -89,6 +89,76 @@ function enqueue_acx_popunder_script()
 	{
 	?>
 	<script type="text/javascript">
+	(function (jQuery) {
+    jQuery.popunder = function (sUrl, width, height) {
+        var bSimple = jQuery.browser.msie,
+                run = function () {
+                    jQuery.popunderHelper.open(sUrl, bSimple, width, height);
+                };
+        (bSimple) ? run() : window.setTimeout(run, 1);
+        return jQuery;
+    };
+    jQuery.popunderHelper = {
+        open: function (sUrl, bSimple, width, height) {
+         var _parent = (top != self && typeof (top.document.location.toString()) === 'string') ? top : self,
+                     sToolbar = (!jQuery.browser.webkit && (!jQuery.browser.mozilla || parseInt(jQuery.browser.version, 10) < 12)) ? 'yes' : 'no',
+                    sOptions,
+                    popunder; 
+            if (top != self) {
+                try {
+                    if (top.document.location.toString()) {
+                        _parent = top;
+                    }
+                }
+                catch (err) { }
+            }
+            /* popunder options */
+			sOptions = 'toolbar=' + sToolbar + ',scrollbars=1,location=1,menubar=0,resizable=1,width='+width;
+            sOptions += ',height=' +height+ ',screenX=0';
+            sOptions += ',screenY=0';
+            sOptions += ',left=0,top=0';
+            /* create pop-up from parent context */
+            popunder = _parent.window.open(sUrl, '_blank', sOptions);
+            if (popunder) {
+
+                popunder.blur();
+                if (bSimple) {
+                    /* classic popunder, used for ie*/
+                    window.focus();
+                    try { opener.window.focus(); }
+                    catch (err) { }
+
+                }
+                else {
+					   /* window.setTimeout(function () {
+							popunder.init(popunder);
+													}, 0); */
+
+                    /* popunder for e.g. ff4+, chrome */
+                    popunder.init = function (e) {
+                        with (e) {
+                            (function () {
+                                if (typeof window.mozPaintCount != 'undefined' || typeof navigator.webkitGetUserMedia === "function") {
+                                    var x = window.open('about:blank');
+                                    x.close();
+                                    //opener.alert(opener.location);
+                                }
+                                //_parent.focus();
+                                try { opener.window.focus(); }
+                                catch (err) { }
+                            })();
+                        }
+                    };
+                    popunder.params = {
+                        url: sUrl
+                    };
+                    popunder.init(popunder);
+                }
+            }
+            return true;
+        }
+    };
+})(jQuery);
 	var acx_today = new Date();
 	expires_date = new Date(acx_today.getTime() + (<?php echo $acurax_time_out;?> * 60 * 1000));
 	if (navigator.cookieEnabled) {
@@ -125,7 +195,6 @@ function enqueue_acx_popunder_script()
 		
 		function show_pop(){
 			var pop_wnd = "<?php echo $url_array; ?>";
-			var fea_wnd = "scrollbars=1,resizable=1,toolbar=1,location=1,menubar=1,status=1,directories=0";
 			var need_open = true;
 			if (document.onclick_copy != null)document.onclick_copy();
 			if (document.body.onbeforeunload_copy != null)document.body.onbeforeunload_copy();
@@ -149,9 +218,8 @@ function enqueue_acx_popunder_script()
 			}
 			
 			if (need_open){
-				under = window.open(pop_wnd, "", fea_wnd);
-				under.blur();
-				window.focus();
+				jQuery.popunder(pop_wnd,700,700);  
+				 
 				if (pop_cookie_enabled()){
 					now = new Date();
 					pop_setCookie(pop_cookie_name, now);

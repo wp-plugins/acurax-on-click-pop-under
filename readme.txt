@@ -17,7 +17,7 @@ A Quick Look
 
 	★ Configure Multiple URLS
 	
-	★ Random URL is Picked and Open as PopUp
+	★ Random URL is Picked and Open as Pop Under
 	
 	★ Controlled by Cookie and So Will Open Only Once in a Session
 	
@@ -57,6 +57,12 @@ Click on PopUnder Menu somewhere below settings menu at wp-admin to configure th
 
 == Upgrade Notice ==
 
+= 2.2 =
+* June 10, 2015
+* Optimized Codes
+* Fixed PopUnder Opening as Popup
+* Stable Release
+
 = 2.1 =
 * May 30, 2015
 * Optimized Codes
@@ -64,6 +70,12 @@ Click on PopUnder Menu somewhere below settings menu at wp-admin to configure th
 * Stable Release
 
 == Changelog ==
+
+= 2.2 =
+* June 10, 2015
+* Optimized Codes
+* Fixed PopUnder Opening as Popup
+* Stable Release
 
 = 2.1 =
 * May 30, 2015
